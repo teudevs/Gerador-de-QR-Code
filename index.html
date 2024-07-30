@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Gerator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fundo">
+    <img src="hacker-laptop-hoodie-modern-malware-cyber-security-5k-3840x2160-1651.jpg" alt="fundo">
+  </div>
+  <div class="box">
+    <div class="qr-header">
+      <h1>Gerator QR Code</h1>
+      <input id="qr-text" type="text" placeholder="Digite seu texto ou insira o URL">
+      <div>
+        <label for="sizes">Selecione o tamanho</label>
+      <select id="sizes">
+        <option value="100">100x100</option>
+        <option value="200">200x200</option>
+        <option value="300">300x300</option>
+        <option value="400">400x400</option>
+        <option value="500">500x500</option>
+        <option value="600">600x600</option>
+        <option value="700">700x700</option>
+        <option value="800">800x800</option>
+        <option value="900">900x900</option>
+        <option value="1000">1000x1000</option>
+      </select>
+      </div>
+    </div>
+    <div class="qr-body"></div>
+    <div class="qr-footer">
+      <a id="generateBtn" href="">Generate</a>
+      <a id="downloadBtn" download="Qr-Code.png" href="">Download</a>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
